@@ -1,6 +1,6 @@
 server:
-    port: 8002
+  port: 8002
 spring:
-    data:
-        mongodb:
-            uri: mongodb+srv://crover:bdCo-v95.@cluster0.nawut.mongodb.net/db_deposit?retryWrites=true&w=majority
+  data:
+    mongodb:
+      uri: mongodb+srv://crover:bdCo-v95.@cluster0.nawut.mongodb.net/db_deposit?retryWrites=true&w=majority
