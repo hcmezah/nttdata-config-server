@@ -1,0 +1,12 @@
+server:
+  port: 8090
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/hcmezah/nttdata-config-server
+          default-label: main
+          search-paths: config-data
+  application:
+    name: config-service
