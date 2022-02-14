@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/hcmezah/nttdata-config-server
+          uri: https://github.com/hcmezah/nttdata-config-server.git
           default-label: main
           search-paths: config-data
   application:
