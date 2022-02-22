@@ -1,10 +1,10 @@
 server:
   port: 8091
 eureka:
-  instance:
-    hostname: bs-registry-service.azurewebsites.net
+  #instance:
+    #hostname: bs-registry-service.azurewebsites.net
   client:
     registerWithEureka: false
     fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    #serviceUrl:
+      #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
