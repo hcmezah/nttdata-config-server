@@ -2,7 +2,7 @@ server:
   port: 8091
 eureka:
   instance:
-    hostname: localhost
+    hostname: bs-registry-service.azurewebsites.net
   client:
     registerWithEureka: false
     fetchRegistry: false
