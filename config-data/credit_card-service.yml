@@ -8,4 +8,4 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8091/eureka/
+      defaultZone: https://bs-registry-service.azurewebsites.net:8091/eureka/
