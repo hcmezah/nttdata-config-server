@@ -2,7 +2,7 @@ server:
   port: 8091
 eureka:
   instance:
-    hostname: localhost
+    hostname: config-server-app.azurewebsites.net
   client:
     registerWithEureka: false
     fetchRegistry: false
