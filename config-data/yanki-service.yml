@@ -1,0 +1,34 @@
+server:
+  port: 8096
+eureka:
+  client:
+    serviceUrl:
+     defaultZone: http://localhost:8091/eureka/
+
+spring: 
+  data:
+    mongodb:
+      uri: mongodb+srv://crover:bdCo-v95.@cluster0.nawut.mongodb.net/db_yanki?retryWrites=true&w=majority
+  kafka:
+    properties:
+      sasl:
+        jaas:
+          config: org.apache.kafka.common.security.scram.ScramLoginModule required
+            username="xc73qeeh" password="OespzQlOp5qKflC4e6Z0KESfrJ510yq5";
+        mechanism: SCRAM-SHA-256
+      security:
+        protocol: SASL_SSL
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    consumer:
+      auto-offset-reset: latest
+      group-id: xc73qeeh-consumers
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: sample.kafka
+      value-deserializer: org.apache.kafka.common.serialization.StringSerializer
+    bootstrap-servers: tricycle-01.srvs.cloudkafka.com:9094,tricycle-02.srvs.cloudkafka.com:9094,tricycle-03.srvs.cloudkafka.com:9094
+cloudkarafka:
+  topic: xc73qeeh-default
